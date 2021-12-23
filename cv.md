@@ -1,42 +1,42 @@
-#RSSCHOOL
+# __RSSCHOOL__
 ---
 
-#Aleksei Zhuchkov
+# __Aleksei Zhuchkov__
 ---
 
-##Contacts:
-*Location: Minsk, Belarus
-*Email: kelzzzer@gmail.com
-*Phone: +375-(29)-779-6068
-*Github: [kelzerock](https://github.com/kelzerock)
-
----
-
-##About me
+## __Contacts__:
+* __Location:__ Minsk, Belarus
+* __Email:__ kelzzzer@gmail.com
+* __Phone:__ +375-(29)-779-6068
+* __Github:__ [kelzerock](https://github.com/kelzerock)
 
 ---
 
-##Skills
+## __About me__
+
+---
+
+## __Skills__
 * HTML and CSS;
 * JavaScript;
 * TypeScript;
-*  Figma;
-*  Git;
+* Figma;
+* Git;
 ---
 
-##Code examples
+## __Code examples__
 ```
 
 
 ```
 ---
 
-##Experience
+## __Experience__
 ---
 
-##Education
+## __Education__
 ---
 
-##English language
+## __English language__
 ###Level A2.
 
