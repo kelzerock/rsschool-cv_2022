@@ -1,3 +1,85 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: red;
+  background-color: whitesmoke;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 10px 20px;
+}
+h2 {
+  font-size: 2rem;
+  margin: 20px 20px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 20px;
+}
+
+.main_window {
+  background-color: #ddd;
+  /* border: solid 1px black; */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+main ul {
+  list-style: disc;
+  margin: 20px 0px 20px 50px;
+}
+
+main {
+  padding-top: 30px;
+}
+
+.main-foto {
+  max-height: 175px;
+  margin-left: 40px;
+  border-radius: 15px;
+}
+.div-main {
+  display: flex;
+}
+nav {
+  background-color: #333;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+nav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+footer {
+  display: flex;
+  background-color: rgb(210, 210, 210);
+  height: 60px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo-rs {
+  height: 40px;
 }
