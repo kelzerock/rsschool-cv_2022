@@ -11,22 +11,26 @@
 
   <body>
     <div class="main_window">
-      <head>
-        <nav>
-          <a class="active" href="#home">Home</a>
-          <a href="#contacts">Contacts</a>
-          <a href="#about">About me</a>
-          <a href="#skills">Skills</a>
-          <a href="#code">Code</a>
-          <a href="#experience">Experience</a>
-          <a href="#education">Education</a>
-          <a href="#english">English language</a>
-        </nav>
-      </head>
+      <nav>
+        <a class="active" href="#home">Home</a>
+        <a href="#contacts">Contacts</a>
+        <a href="#about">About me</a>
+        <a href="#skills">Skills</a>
+        <a href="#code">Code</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#english">English language</a>
+      </nav>
       <main>
         <div class="div-main">
-        <img class="main-foto" src="./src/IMG_20210825_153240.jpg" alt="foto Aleksei Zhuchkov">
-        <h1 id="home">CV Aleksei Zhuchkov</h1>
+          <header>
+            <img
+              class="main-foto"
+              src="./src/IMG_20210825_153240.jpg"
+              alt="foto Aleksei Zhuchkov"
+            />
+            <h1 id="home">CV Aleksei Zhuchkov</h1>
+          </header>
         </div>
         <div class="div-contacts">
           <h2 id="contacts">Contacts</h2>
@@ -35,7 +39,10 @@
             <li>Email: kelzzzer@gmail.com;</li>
             <li>Phone: +375(29)779-6068;</li>
             <li>
-              Github: <a href="https://github.com/kelzerock" target="_blank">kelzerock</a>
+              Github:
+              <a href="https://github.com/kelzerock" target="_blank"
+                >kelzerock</a
+              >
             </li>
           </ul>
         </div>
@@ -58,18 +65,17 @@
         <div id="skills" class="div-skills">
           <h2>Skills</h2>
           <ul>
-            <li>HTML & CSS </li>
-            <li>JavaScript </li>
-            <li>TypeScript </li>
-            <li>Figma </li>
-            <li>Git </li>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>Figma</li>
+            <li>Git</li>
             <li>Excel</li>
           </ul>
         </div>
         <div id="code" class="div-code">
           <h2>Code examples</h2>
           <pre>
-            <code>
               function findOdd(A){
                 for(let i = 0; i < A.length; i++ ){
                   let arr = A.filter(item => {
@@ -80,7 +86,6 @@
                 };
                 return 0;
               }
-            </code>
           </pre>
         </div>
         <div id="experience" class="div-experience">
@@ -95,8 +100,17 @@
           <ul>
             <li>INSTITUTE OF ENTREPRENEURSHIP (Business administration)</li>
             <li>BSEU (Finance and credit)</li>
-            <li>ItAcademy (Website Development Using HTML and CSS & JavaScript Web Application Development)</li>
-            <li><a href="https://app.rs.school/certificate/sjc6h45g" target="_blank">RS SCHOOL (JS 2021Q1)</a></li>
+            <li>
+              ItAcademy (Website Development Using HTML and CSS & JavaScript Web
+              Application Development)
+            </li>
+            <li>
+              <a
+                href="https://app.rs.school/certificate/sjc6h45g"
+                target="_blank"
+                >RS SCHOOL (JS 2021Q1)</a
+              >
+            </li>
           </ul>
         </div>
         <div id="english" class="div-english">
@@ -105,14 +119,14 @@
         </div>
       </main>
       <footer>
-                  <img
-            class="logo-rs"
-            src="https://rs.school/images/rs_school_js.svg"
-            alt="logo RSSchool"
-          />
-          <h3>
-            <a href="https://rs.school/js-stage0/">RSSchool 2021Q4</a>
-          </h3>
+        <img
+          class="logo-rs"
+          src="https://rs.school/images/rs_school_js.svg"
+          alt="logo RSSchool"
+        />
+        <h3>
+          <a href="https://rs.school/js-stage0/">RSSchool 2021Q4</a>
+        </h3>
       </footer>
     </div>
     <script src="./script.js"></script>

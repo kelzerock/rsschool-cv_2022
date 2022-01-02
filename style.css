@@ -42,9 +42,11 @@ main {
   margin-left: 40px;
   border-radius: 15px;
 }
-.div-main {
+
+header {
   display: flex;
 }
+
 nav {
   background-color: #333;
   overflow: hidden;
