@@ -22,6 +22,7 @@
 * Figma
 * Git
 * Excel
+
 ---
 
 ## __Code examples__
@@ -48,6 +49,7 @@ function findOdd(A){
 * BSEU (_Finance and credit_)
 * ItAcademy (_Website Development Using HTML and CSS & JavaScript Web Application Development_)
 * RS SCHOOL (_[JS 2021Q1](https://app.rs.school/certificate/sjc6h45g)_)
+
 ---
 
 ## __English language__
