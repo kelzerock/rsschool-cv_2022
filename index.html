@@ -24,7 +24,10 @@
         </nav>
       </head>
       <main>
+        <div class="div-main">
+        <img class="main-foto" src="./src/IMG_20210825_153240.jpg" alt="foto Aleksei Zhuchkov">
         <h1 id="home">CV Aleksei Zhuchkov</h1>
+        </div>
         <div class="div-contacts">
           <h2 id="contacts">Contacts</h2>
           <ul>
@@ -32,7 +35,7 @@
             <li>Email: kelzzzer@gmail.com;</li>
             <li>Phone: +375(29)779-6068;</li>
             <li>
-              Github: <a href="https://github.com/kelzerock">kelzerock</a>
+              Github: <a href="https://github.com/kelzerock" target="_blank">kelzerock</a>
             </li>
           </ul>
         </div>
@@ -65,7 +68,20 @@
         </div>
         <div id="code" class="div-code">
           <h2>Code examples</h2>
-
+          <pre>
+            <code>
+              function findOdd(A){
+                for(let i = 0; i < A.length; i++ ){
+                  let arr = A.filter(item => {
+                    if(item === A[i]){return true};
+                  })
+                  if(arr.length > 0 && arr.length%2 !== 0)
+                    {return A[i]}
+                };
+                return 0;
+              }
+            </code>
+          </pre>
         </div>
         <div id="experience" class="div-experience">
           <h2>Experience</h2>
@@ -77,10 +93,10 @@
         <div id="education" class="div-education">
           <h2>Education</h2>
           <ul>
-            <li>INSTITUTE OF ENTREPRENEURSHIP (_Business administration_)</li>
-            <li>BSEU (_Finance and credit_)</li>
-            <li>ItAcademy (_Website Development Using HTML and CSS & JavaScript Web Application Development_)</li>
-            <li><a href="https://app.rs.school/certificate/sjc6h45g">RS SCHOOL (JS 2021Q1)</a></li>
+            <li>INSTITUTE OF ENTREPRENEURSHIP (Business administration)</li>
+            <li>BSEU (Finance and credit)</li>
+            <li>ItAcademy (Website Development Using HTML and CSS & JavaScript Web Application Development)</li>
+            <li><a href="https://app.rs.school/certificate/sjc6h45g" target="_blank">RS SCHOOL (JS 2021Q1)</a></li>
           </ul>
         </div>
         <div id="english" class="div-english">
@@ -89,19 +105,16 @@
         </div>
       </main>
       <footer>
-        <div class="logo-rs">
-          <img
+                  <img
             class="logo-rs"
             src="https://rs.school/images/rs_school_js.svg"
             alt="logo RSSchool"
           />
-        </div>
-        <div class="course">
           <h3>
             <a href="https://rs.school/js-stage0/">RSSchool 2021Q4</a>
           </h3>
-        </div>
       </footer>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
