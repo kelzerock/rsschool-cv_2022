@@ -5,6 +5,7 @@
 * __Email:__ kelzzzer@gmail.com
 * __Phone:__ +375-(29)-779-6068
 * __Github:__ [kelzerock](https://github.com/kelzerock)
+
 ---
 
 ## __About me__
@@ -13,6 +14,7 @@
 * I am always energetic and eager to learn new skills.
 * I am always on time for organised events, work-related or otherwise.
 * Even though I take my work seriously, I do have a good sense of humour. :smirk:
+
 ---
 
 ## __Skills__
@@ -42,6 +44,7 @@ function findOdd(A){
 ## __Experience__
 * Adverticing
 * Banking credit
+
 ---
 
 ## __Education__
