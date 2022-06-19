@@ -1,14 +1,43 @@
 main {
   flex: 1 1 auto;
   padding: 30px 10px;
-}
 
-.block__section {
-  padding: 20px;
-}
+  .block__section {
+    background-color: #c2c2c2;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+  }
 
-.main-foto {
-  max-height: 175px;
-  margin-left: 40px;
-  border-radius: 15px;
+  .block__section_foto {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+
+    .main-foto {
+      max-height: 175px;
+      border-radius: 15px;
+    }
+  }
+
+  .block__section_skills {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    & p::before {
+      content: '◉';
+      padding-right: 10px;
+      font-size: 14px;
+    }
+
+    .block__section_hard-skill,
+    .block__section_soft-skill {
+      border: solid 2px #00000020;
+      border-radius: 10px;
+      margin: 5px;
+      padding: 10px;
+    }
+  }
 }
