@@ -244,7 +244,7 @@ main .block__section_education h3::before {
   font-size: 14px;
 }
 
-@media (max-width: 690px) {
+@media all and (max-width: 690px) {
   main .block__section {
     margin: 5px;
     padding: 8px;
@@ -254,12 +254,13 @@ main .block__section_education h3::before {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     margin-top: 40px;
   }
   main .block__section_foto .main-foto {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: auto;
   }
   main .block__section_skills ul,
   main .block__section_education ul {

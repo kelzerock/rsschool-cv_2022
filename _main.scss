@@ -63,7 +63,7 @@ main {
   }
 }
 
-@media (max-width: 690px) {
+@media all and (max-width: 690px) {
 
   main {
     .block__section {
@@ -73,10 +73,11 @@ main {
 
     .block__section_foto {
       flex-direction: column;
+      align-items: flex-start;
       margin-top: 40px;
 
       .main-foto {
-        width: fit-content;
+        width: auto;
       }
     }
 
