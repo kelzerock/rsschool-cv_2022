@@ -1,0 +1,52 @@
+@import './header';
+@import './main';
+@import './footer';
+
+h1 {
+  font-size: 3rem;
+  margin: 10px 20px;
+}
+h2 {
+  font-size: 2rem;
+  margin: 20px;
+}
+h3 {
+  font-size: 1.5rem;
+  margin: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 5px;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+
+  body {
+    background-color: whitesmoke;
+    scroll-behavior: smooth;
+    height: 100%;
+
+    &._lock {
+      overflow: hidden;
+    }
+    .wrapper {
+      background-color: #ddd;
+      max-width: 1000px;
+      margin: 0 auto;
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 690px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+
