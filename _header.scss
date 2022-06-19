@@ -11,14 +11,21 @@ header {
 
     .navigation__menu {
       width: 100%;
+      height: 60px;
+      display: flex;
       background-color: #333;
+      align-items: center;
+
+      .menu_icon {
+        display: none;
+      }
 
       .menu {
+        height: 100%;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-
 
         .menu__item {
           padding: 12px 15px;
@@ -51,6 +58,90 @@ header {
   }
 }
 
-@media (min-width: 767px) {
+@media (max-width: 690px) {
+  header {
+    .header-container {
+      .navigation__menu {
 
+        justify-content: flex-end;
+        .menu_icon {
+          z-index: 5;
+          display: block;
+          position: relative;
+          width: 30px;
+          height: 18px;
+          cursor: pointer;
+          margin-right: 30px;
+
+          & span,
+          &::before,
+          &::after {
+            left: 0;
+            position: absolute;
+            height: 10%;
+            width: 100%;
+            transition: all 0.3s ease 0s;
+            background-color: #fff;
+          }
+          &::before,
+          &::after {
+            content: "";
+          }
+          &::before {top: 0;}
+          &::after {bottom: 0;}
+          & span {
+            top: 50%;
+            transform: scale(1) translate(0, -50%);
+          }
+
+          &._active span{
+            transform: scale(0) translate(0, -50%);
+          }
+          &._active::before{
+            top: 50%;
+            transform: rotate(45deg) translate(0, -50%);
+          }
+          &._active::after{
+            top: 50%;
+            transform: rotate(-45deg) translate(0, -50%);
+          }
+        }
+
+        .menu {
+          position: fixed;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 100%;
+          background: #00000090;
+          padding: 100px 0 0 0;
+          transition: left 0.3s ease 0s;
+          flex-direction: column;
+          row-gap: 10px;
+          overflow: auto;
+
+          &._active {
+            left: 0;
+          }
+
+          &::before {
+            content: "";
+            position: fixed;
+            height: 60px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: #333;
+          }
+
+          .menu__item {
+            min-height: 20px;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
 }

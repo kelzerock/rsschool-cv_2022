@@ -7,6 +7,7 @@ main {
     margin: 10px;
     padding: 20px;
     border-radius: 10px;
+    transition: all 0.3s ease 0s;
   }
 
   .block__section_foto {
@@ -27,7 +28,7 @@ main {
     }
 
     & p::before {
-      content: '◉';
+      content: "◉";
       padding-right: 10px;
       font-size: 14px;
     }
@@ -40,4 +41,51 @@ main {
       padding: 10px;
     }
   }
+
+  .block__section_education {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      li {
+        border: solid 2px #00000020;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 10px;
+      }
+    }
+
+    & h3::before {
+      content: "◉";
+      padding-right: 10px;
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 690px) {
+
+  main {
+    .block__section {
+      margin: 5px;
+      padding: 8px;
+    }
+
+    .block__section_foto {
+      flex-direction: column;
+      margin-top: 40px;
+
+      .main-foto {
+        width: fit-content;
+      }
+    }
+
+    .block__section_skills,
+    .block__section_education {
+      ul {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
 }

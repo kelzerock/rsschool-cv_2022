@@ -29,6 +29,9 @@ html {
     scroll-behavior: smooth;
     height: 100%;
 
+    &._lock {
+      overflow: hidden;
+    }
     .wrapper {
       background-color: #ddd;
       max-width: 1000px;
@@ -37,6 +40,12 @@ html {
       display: flex;
       flex-direction: column;
     }
+  }
+}
+
+@media (max-width: 690px) {
+  html {
+    font-size: 14px;
   }
 }
 

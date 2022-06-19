@@ -10,3 +10,18 @@ footer {
 .logo-rs {
   height: 40px;
 }
+
+@media (max-width: 690px) {
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 90px;
+
+    img {
+      max-width: 270px;
+    }
+  }
+
+}
